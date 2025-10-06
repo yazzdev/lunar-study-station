@@ -1,2 +1,2 @@
-import { PrismaClient } from '@lunar-study-station/db';
-export const prisma = new PrismaClient();
+import { prisma } from '@lunar-study-station/db';
+export { prisma };
