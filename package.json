@@ -1,0 +1,17 @@
+{
+  "name": "lunar-study-station",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@lunar-study-station/web",
+    "api": "npm run dev --workspace=@lunar-study-station/api",
+    "db:generate": "npm run db:generate --workspace=@lunar-study-station/db",
+    "db:migrate": "npm run db:migrate --workspace=@lunar-study-station/db"
+  },
+  "devDependencies": {
+    "prisma": "^5.10.2"
+  }
+}
